@@ -1,0 +1,45 @@
+body {
+  background-color: white;
+}
+
+#main {
+  background-color: lightgrey;
+  border-color: #60160a;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+#title {
+  font-family: 'Spectral SC', cursive;
+  font-size: 40px;
+  font-style: bold;
+}
+
+#description {
+  font-size: 18px;
+  color: #60160a !important;
+}
+
+#thumbnail {
+  max-width: 1023px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 18px;
+}
+
+#subTitle {
+  font-family: 'Spectral SC', cursive;
+  font-size: 40px;
+  font-style: bold;
+}
+
+#timeline {
+  max-width: 1023px;
+  font-size: 18px;
+}
+
+#link {
+  font-size: 24px;
+}
