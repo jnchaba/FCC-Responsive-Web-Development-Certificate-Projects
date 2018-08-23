@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Project 2 - Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- 
+Project Name: FCC Project 2 - Survey Form.
+Created by: Jakub Chaba
+Project Began: 08-22-2018
+Project Completed: 08-22-2018
+-->
+<html>
+  <header>
+    <meta charset="utf-8">
+    <meta name="author" content="Jakub Chaba">
+    <meta name="project description" content="FCC: Project 2 - Survey Form">
+  </header>
+  
+  <!-- freeCodeCamp Test Suite CDN 
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  -->
+<div class="container">   
+    <h1 id="title">Photography Service Inquiry Form</h1>
+
+<div id="fd">
+      <p id="description">Let us know what we can do for you!</p>
+
+      <p id="sub-description">We'll get back to you as soon as we can.</p>
+    
+  
+  <form id="survey-form">
+    <!-- Contact Info -->
+    <div id="contact-info" class="contact">
+      <div class="left">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="right">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name here" required>
+      </div>
+      <div class="left">
+        <label id="email-label" for="email">Email:</label>
+      </div>
+      <div class="right">
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email here" required>
+      </div>
+      <div class="left">
+        <label id="number-label" for="age">Age:</label>
+      </div>
+      <div class="right">
+        <input type="number" name="age" id="number" class="input-field" min="10" max="125" placeholder="Age" required>
+    </div>
+    </div>  
+    <!-- Service Details -->
+     <div id="service" class="service">   
+      <div class="left">
+        <label for="serviceReq">What service(s) would you like to request?</label>
+      </div>
+      <div class="right">
+        <select id="dropdown" name="serviceReq" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="photo">Photo</option>
+          <option value="video">Video</option>
+          <option value="phovid">Photo and Video</option>
+        </select>
+      </div>
+    </div>  
+    <!-- Party Details -->
+    <div id="party" class="party">
+      <div class="left">
+        <label for="partySize">What is your party size?</label>
+      </div>
+      <div class="right">
+        <ul style="list-style: none;" required>
+          <li class="radio"><label>One<input name="radio-buttons" value="1" type="radio" class="partySizes"></label></li>
+          <li class="radio"><label>Less than 7<input name="radio-buttons" value="2" type="radio" class="partySizes"></label></li>
+          <li class="radio"><label>More than 7<input name="radio-buttons" value="3" type="radio" class="partySizes"></label></li>
+        </ul>
+      </div>
+    </div>  
+    <!-- Expected Session Time -->
+    <div id="session" class="session">
+      <div class="left">
+        <label for="exTime">Expected session time</label>
+      </div>
+      <div class="right">
+        <select id="dropdown" name="exTime" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="short">Less than 30min</option>
+          <option value="hour">Less than an hour</option>
+          <option value="long">More than an hour</option>
+        </select>
+      </div>
+    </div>  
+    <!-- Editing -->
+    <div id="editing" class="editing">
+      <div class="left">
+        <label for="qEdit">Do you require post-capture editing?</label>
+      </div>
+      <div class="right">
+        <ul style="list-style: none;">
+          <li class="radio"><label>No<input name="radio-buttons" value="1" type="radio" class="qEdit"></label></li>
+          <li class="radio"><label>Yes<input name="radio-buttons" value="2" type="radio" class="qEdit"></label></li>
+        </ul>  
+      </div>
+    </div> 
+    <!-- Hearing -->
+    <div id="hring" class="hring">
+      <div class="left">
+        <label for="hearing">How did you hear about us? (Select all that apply)</label>
+      </div>
+      <div class="right">
+        <ul id="hearing" style="list-style: none;">
+          <li class="checkbox"><label><input name="hear" value="1" type="checkbox" class="hearing">Web Search</label></li>
+          <li class="checkbox"><label><input name="hear" value="2" type="checkbox" class="hearing">Friend/Family</label></li>
+          <li class="checkbox"><label><input name="hear" value="3" type="checkbox" class="hearing">Advertisement</label></li>
+          <li class="checkbox"><label><input name="hear" value="4" type="checkbox" class="hearing">Other</label></li>
+      </div>
+     </div>    
+    <!-- Details -->
+      <div id="dtail" class="dtail">
+      <div class="left">
+        <label for="details">If you have any specific details or questions, type them here:</label>
+      </div>
+      <div class="right">
+        <textarea id="details" class="input-field" style="height:50px;resize:vertical;" name="detail" placeholder="Enter text here..."></textarea>
+      </div>
+      </div>  
+      <div id="button" class="button">
+        <button id="submit" type="submit">Submit</button>
+      </div>  
+        </form>  
+      
+    </div>
+ 
+ </html>
+  
+  
+
+</body>
+
+</html>
